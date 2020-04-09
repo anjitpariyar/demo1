@@ -33,17 +33,18 @@ $('.autoplay').slick({
     settings: {
       slidesToShow: 2,
       arrows: true,
-      centerMode: true,
+      centerMode: false,
+      arrows: false,
+
     }
   },
   {
-    breakpoint: 568,
+    breakpoint: 608,
     settings: {
       slidesToShow: 1,
-      arrows: false,
       centerMode: true,
-      centerPadding: '60px',
-
+      centerPadding: '30px',
+      arrows: false,
     }
   },
   ]
@@ -227,16 +228,19 @@ jQuery(window).scroll(function() {
         settings: {
           slidesToShow: 2,
           arrows: true,
-          centerMode: true,
+          centerMode: false,
+          arrows: false,
+
         }
       },
       {
-        breakpoint: 568,
+        breakpoint: 608,
         settings: {
           slidesToShow: 1,
-          arrows: false,
           centerMode: true,
-          centerPadding: '60px',
+          centerPadding: '30px',
+          arrows: false,
+
 
         }
       },
