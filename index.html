@@ -68,15 +68,75 @@
 								<ul class="top-right-content">
 									<li>
 										<div class="dropdown ">
-											<img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" class="admin-img">
-											<a class=" dropdown-toggle" id="menu1" data-toggle="dropdown">My Account<span class="caret"></span></a>
+											<!-- <img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" class="admin-img"> -->
+											<a class=" dropdown-toggle" id="menu1" data-toggle="dropdown">Login<span class="caret"></span></a>
 											<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
 												<li><a role="menuitem" tabindex="-1" href="#">Login</a></li>
 												<li><a role="menuitem" tabindex="-1" href="#">Register</a></li>
 											</ul>
 										</div>
 									</li>
-									<li class="cart"><a href="#"><img src="images/shopping_bag.svg"></a></li>
+									<li class="cart">
+										<div class="dropdown">
+											<a href="#" class=" dropdown-toggle" data-toggle="dropdown">
+												<img src="images/shopping_bag.svg"> <span class="circle">2</span>
+											</a>
+											<ul class="dropdown-menu cart-drop" role="menu" >
+												<li>
+													<div class="row cart-items-list">
+														<div class="cart-item-info">
+															<div class="row">
+																<div class="col col-md-4">
+																	<div class="cart-item-img">
+																		<img src="images/large-hempbag.jpg" class="img-fluid">
+																	</div>
+																</div>
+																<div class="col col-md-8">
+																	<div class="cart-item-name">
+																		<h3><a href="#">Tara Statue Decor</a><span>X 2</span></h3>
+																		<p class="price">$412</p>
+																	</div>
+																</div>
+																<div class="close">
+																	<a href="#">×</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="row cart-items-list">
+														<div class="cart-item-info">
+															<div class="row">
+																<div class="col col-md-4">
+																	<div class="cart-item-img">
+																		<img src="images/large-hempbag.jpg" class="img-fluid">
+																	</div>
+																</div>
+																<div class="col col-md-8">
+																	<div class="cart-item-name">
+																		<h3><a href="#">Tara Statue Decor</a><span>X 2</span></h3>
+																		<p class="price">$412</p>
+																	</div>
+																</div>
+																<div class="close">
+																	<a href="#">×</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+
+												<li class="button">
+													<a class="view cart" href="./cart.html">View cart</a>
+												</li>
+												<li class="button view">
+													<a class="view cart" href="./checkout.html">Check Out</a>
+												</li>
+											</ul>
+										</div>
+										
+									</li>
 									<li class="flag">
 										<a href="#"><img src="images/Animated-Flag-Nepal.gif"></a>
 									</li>
@@ -91,14 +151,14 @@
 			<div class="mobile-main-menu">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-5 col-12">
+						<div class="col-sm-3 col-6">
 							<div class="mob-logo">
 								<a href="#">
 									<img src="images/logo.svg" class="img-fluid">
 								</a>
 							</div>
 						</div>
-						<div class="col-sm-5 col-8">
+						<div class="col-sm-7 col-12">
 							<div class="mobile-form">
 								<form class="form-slide">
 									<input class="form-control" type="text" placeholder="Search"
@@ -107,7 +167,7 @@
 								</form>
 							</div>
 						</div>
-						<div class="col-sm-2 col-4">
+						<div class="col-sm-2 col-6">
 							<a id="mobile-trigger" href="#mob-menu"><i class="fa fa-list" aria-hidden="true"></i><span class="trigger-title"></span> Menu</a>
 							<div class="mob-menu">
 								<div id="mySidenav" class="sidenav">
@@ -120,24 +180,36 @@
 									<ul class="mobile-menu-list">
 										<li><a href="index.html" class="active">Home</a></li>
 										<li class="has-sub-menu">
-											<a href="#"><span>Categories</span></a>
-											<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-chevron-down sub-menu-icon"></i></a>
+											<a href="#"><span>Hemp Products</span></a>
+											<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="collapsed"><i class="fas fa-chevron-down sub-menu-icon"></i></a>
 											<ul class="collapse list-unstyled" id="pageSubmenu">
 												<li>
-													<a href="#">Category 1</a>
+													<a href="#">Sub Product 1</a>
 												</li>
 												<li>
-													<a href="#">Category 2</a>
+													<a href="#">Sub Product 2</a>
 												</li>
 												<li>
-													<a href="#"> Category 3</a>
-													<a href="#newpageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-chevron-down sub-menu-icon"></i></a>
+													<a href="#"> Sub Product 3 </a>
+													<a href="#newpageSubmenu" class="collapsed" data-toggle="collapse" aria-expanded="false"><i class="fas fa-chevron-down sub-menu-icon"></i></a>
 													<ul class="collapse list-unstyled" id="newpageSubmenu">
 														<li>
-															<a href="#">Category A</a>
+															<a href="#">Sub Product 4</a>
 														</li>
 														<li>
-															<a href="#">Category B</a>
+															<a href="#">Sub Product 5</a>
+														</li>
+														<li>
+															<a href="#"> Sub Product 6 </a>
+															<a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="collapsed"><i class="fas fa-chevron-down sub-menu-icon"></i></a>
+															<ul class="collapse list-unstyled" id="submenu3">
+																<li>
+																	<a href="#">Sub Product 7</a>
+																</li>
+																<li>
+																	<a href="#">Sub Product 8</a>
+																</li>
+															</ul>
 														</li>
 													</ul>
 												</li>
@@ -145,7 +217,7 @@
 										</li>
 										<li class="has-sub-menu">
 											<a href="#"><span>Blog</span></a>
-											<a href="#blogSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-chevron-down sub-menu-icon"></i></a>
+											<a class="collapsed" href="#blogSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-chevron-down sub-menu-icon"></i></a>
 											<ul class="collapse list-unstyled" id="blogSubmenu">
 												<li>
 													<a href="#">Page 1</a>
@@ -159,11 +231,11 @@
 										<li><a href="#">Shop</a></li>
 										<li><a href="#">Contact</a></li>
 									</ul>
-									<form>
+									<!-- <form>
 										<input type="text" placeholder="Search"
 										aria-label="Search">
 										<button><i class="fas fa-search" aria-hidden="true"></i></button>
-									</form>
+									</form> -->
 								</div>
 							</div>
 						</div>
@@ -186,18 +258,18 @@
 										Hemp Products
 									</a>
 									<ul class="dropdown-menu">
-										<li><a tabindex="-1" href="#">Sub-Product 1</a></li>
-										<li><a tabindex="-1" href="#">Sub-Product 2</a></li>
+										<li><a tabindex="-1" href="#" class="nav-link">Sub-Product 1</a></li>
+										<li><a tabindex="-1" href="#" class="nav-link">Sub-Product 2</a></li>
 										<li class="dropdown-submenu dropright">
 											<a class="test dropdown-toggle" tabindex="-1" href="#">Sub-Product 3<span class="caret"></span></a>
 											<ul class="dropdown-menu dropright">
-												<li><a tabindex="-1" href="#">Sub-Product 4</a></li>
-												<li><a tabindex="-1" href="http://google.com">Sub-Product 5</a></li>
+												<li><a tabindex="-1" href="#" class="nav-link">Sub-Product 4</a></li>
+												<li><a tabindex="-1" href="http://google.com" class="nav-link">Sub-Product 5</a></li>
 												<li class="dropdown-submenu dropright">
-													<a class="test dropdown-toggle" href="#">Sub-Product 6 <span class="caret"></span></a>
+													<a class="test dropdown-toggle" href="#" class="nav-link">Sub-Product 6 <span class="caret"></span></a>
 													<ul class="dropdown-menu dropright">
-														<li><a href="#">Sub-Product 7</a></li>
-														<li><a href="#">Sub-Product 8</a></li>
+														<li><a href="#" class="nav-link">Sub-Product 7</a></li>
+														<li><a href="#" class="nav-link">Sub-Product 8</a></li>
 													</ul>
 												</li>
 											</ul>
@@ -371,12 +443,94 @@
 					<div class="col-md-12">
 						<div class="product-view-all">
 							<h2>Popular Products</h2>
-							<a class="view-all" href="#">View all</a>
+							<!-- <a class="view-all" href="#">View all</a> -->
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-12">
+				</div>
+				<div class="popular-slider">
+					<div class="item col">	
 						<div class="major-product">
-							<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
+							<div class="product-name">
+								<p>Leather Strapped Hemp Backpack Lhb18</p>
+								<p class="price">$54.99</p>
+								<div class="add-to-cart">
+									<a class="add-cart" href="">Add to cart</a>
+									<a href=""><img src="images/eye-open.svg"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item col">	
+						<div class="major-product">
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
+							<div class="product-name">
+								<p>Leather Strapped Hemp Backpack Lhb18</p>
+								<p class="price">$54.99</p>
+								<div class="add-to-cart">
+									<a class="add-cart" href="">Add to cart</a>
+									<a href=""><img src="images/eye-open.svg"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item col">	
+						<div class="major-product">
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
+							<div class="product-name">
+								<p>Leather Strapped Hemp Backpack Lhb18</p>
+								<p class="price">$54.99</p>
+								<div class="add-to-cart">
+									<a class="add-cart" href="">Add to cart</a>
+									<a href=""><img src="images/eye-open.svg"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item col">	
+						<div class="major-product">
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
+							<div class="product-name">
+								<p>Leather Strapped Hemp Backpack Lhb18</p>
+								<p class="price">$54.99</p>
+								<div class="add-to-cart">
+									<a class="add-cart" href="">Add to cart</a>
+									<a href=""><img src="images/eye-open.svg"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item col">	
+						<div class="major-product">
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
+							<div class="product-name">
+								<p>Leather Strapped Hemp Backpack Lhb18</p>
+								<p class="price">$54.99</p>
+								<div class="add-to-cart">
+									<a class="add-cart" href="">Add to cart</a>
+									<a href=""><img src="images/eye-open.svg"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item col">	
+						<div class="major-product">
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
+							<div class="product-name">
+								<p>Leather Strapped Hemp Backpack Lhb18</p>
+								<p class="price">$54.99</p>
+								<div class="add-to-cart">
+									<a class="add-cart" href="">Add to cart</a>
+									<a href=""><img src="images/eye-open.svg"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+					<!-- <div class="col-md-3 col-sm-6 col-12">
+						<div class="major-product">
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 							<div class="product-name">
 								<p>Leather Strapped Hemp Backpack Lhb18</p>
 								<p class="price">$54.99</p>
@@ -389,7 +543,7 @@
 					</div>
 					<div class="col-md-3 col-sm-6 col-12">
 						<div class="major-product">
-							<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 							<div class="product-name">
 								<p>Leather Strapped Hemp Backpack Lhb18</p>
 								<p class="price">$54.99</p>
@@ -402,7 +556,7 @@
 					</div>
 					<div class="col-md-3 col-sm-6 col-12">
 						<div class="major-product">
-							<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 							<div class="product-name">
 								<p>Leather Strapped Hemp Backpack Lhb18</p>
 								<p class="price">$54.99</p>
@@ -415,7 +569,7 @@
 					</div>
 					<div class="col-md-3 col-sm-6 col-12">
 						<div class="major-product">
-							<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 							<div class="product-name">
 								<p>Leather Strapped Hemp Backpack Lhb18</p>
 								<p class="price">$54.99</p>
@@ -425,7 +579,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</section>
 		</div>
@@ -439,21 +593,21 @@
 							<ul class="nav nav-tabs" id="myTab" role="tablist">
 								<li class="nav-item">
 									<a class="nav-link active" id="sale-tab" data-toggle="tab" href="#sale" role="tab" aria-controls="sale"
-									aria-selected="true">Sale</a>
+									aria-selected="true">Sale Seasonal</a>
 								</li>
-								<li class="nav-item">
+								<!-- <li class="nav-item">
 									<a class="nav-link" id="seasonal-tab" data-toggle="tab" href="#seasonal" role="tab" aria-controls="seasonal"
 									aria-selected="false">Seasonal</a>
-								</li>
+								</li> -->
 							</ul>
 							<a class="view-all" href="#">View all</a>
 						</div>
 						<div class="tab-content" id="myTabContent">
 							<div class="tab-pane fade show active" id="sale" role="tabpanel" aria-labelledby="sale-tab">
 								<div class="row">
-									<div class="col-md-3">
+									<div class="col-md-3 col-sm-6">
 										<div class="major-product">
-											<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+											<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 											<div class="product-name">
 												<p>Leather Strapped Hemp Backpack Lhb18</p>
 												<p class="price">$54.99</p>
@@ -464,9 +618,9 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-3">
+									<div class="col-md-3 col-sm-6">
 										<div class="major-product">
-											<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+											<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 											<div class="product-name">
 												<p>Leather Strapped Hemp Backpack Lhb18</p>
 												<p class="price">$54.99</p>
@@ -477,9 +631,9 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-3">
+									<div class="col-md-3 col-sm-6">
 										<div class="major-product">
-											<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+											<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 											<div class="product-name">
 												<p>Leather Strapped Hemp Backpack Lhb18</p>
 												<p class="price">$54.99</p>
@@ -490,9 +644,9 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-3">
+									<div class="col-md-3 col-sm-6">
 										<div class="major-product">
-											<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+											<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 											<div class="product-name">
 												<p>Leather Strapped Hemp Backpack Lhb18</p>
 												<p class="price">$54.99</p>
@@ -509,7 +663,7 @@
 								<div class="row">
 									<div class="col-md-3">
 										<div class="major-product">
-											<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+											<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 											<div class="product-name">
 												<p>Leather Strapped Hemp Backpack Lhb18</p>
 												<p class="price">$69.99</p>
@@ -522,7 +676,7 @@
 									</div>
 									<div class="col-md-3">
 										<div class="major-product">
-											<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+											<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 											<div class="product-name">
 												<p>Leather Strapped Hemp Backpack Lhb18</p>
 												<p class="price">$69.99</p>
@@ -535,7 +689,7 @@
 									</div>
 									<div class="col-md-3">
 										<div class="major-product">
-											<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+											<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 											<div class="product-name">
 												<p>Leather Strapped Hemp Backpack Lhb18</p>
 												<p class="price">$69.99</p>
@@ -548,7 +702,7 @@
 									</div>
 									<div class="col-md-3">
 										<div class="major-product">
-											<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+											<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 											<div class="product-name">
 												<p>Leather Strapped Hemp Backpack Lhb18</p>
 												<p class="price">$69.99</p>
@@ -609,7 +763,7 @@
 					</div>
 					<div class="col-md-3 col-sm-6 col-12">
 						<div class="major-product">
-							<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 							<div class="product-name">
 								<p>Leather Strapped Hemp Backpack Lhb18</p>
 								<p class="price">$54.99</p>
@@ -622,7 +776,7 @@
 					</div>
 					<div class="col-md-3 col-sm-6 col-12">
 						<div class="major-product">
-							<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 							<div class="product-name">
 								<p>Leather Strapped Hemp Backpack Lhb18</p>
 								<p class="price">$54.99</p>
@@ -635,7 +789,7 @@
 					</div>
 					<div class="col-md-3 col-sm-6 col-12">
 						<div class="major-product">
-							<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 							<div class="product-name">
 								<p>Leather Strapped Hemp Backpack Lhb18</p>
 								<p class="price">$54.99</p>
@@ -648,7 +802,7 @@
 					</div>
 					<div class="col-md-3 col-sm-6 col-12">
 						<div class="major-product">
-							<div class="thumbnail"> <a href=""><img src="images/bag.png" class="img-fluid"></a></div>
+							<div class="thumbnail"> <a href=""><img src="images/large-hempbag.jpg" class="img-fluid"></a></div>
 							<div class="product-name">
 								<p>Leather Strapped Hemp Backpack Lhb18</p>
 								<p class="price">$54.99</p>
@@ -666,28 +820,37 @@
 	<div class="testimonial">
 		<div class="container">
 			<section class="testimonial-content">
+				<h2>Customers Speak</h2>
 				<div class="testimonial-heading">
-					<h2><span>Customers Speak</span></h2>
 					<div class="row autoplay">
 						<div class="col-md-6">
 							<div class="testimonial-content">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 								</p>
-								<h3>ABC</h3>
+								<div class="image text-center">
+									<img src="./images/buddha.jpg" alt="">
+								</div>
+								<h3>natsuki subaru</h3>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="testimonial-content">
 								<p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								<h3>ABC</h3>
+								<div class="image text-center">
+									<img src="./images/buddha.jpg" alt="">
+								</div>
+								<h3>natsuki subaru</h3>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="testimonial-content">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 								</p>
-								<h3>ABC</h3>
+								<div class="image text-center">
+									<img src="./images/buddha.jpg" alt="">
+								</div>
+								<h3>natsuki subaru</h3>
 							</div>
 						</div>
 					</div>
@@ -775,7 +938,8 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/custom.js"></script>
 <script src="js/lsb.min.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
 </html>

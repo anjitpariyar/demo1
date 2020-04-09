@@ -26,7 +26,27 @@ $('.autoplay').slick({
   arrows:true,
   autoplaySpeed: 4000,
   prevArrow: '<span data-role="none" class="slick-prev" tabindex="0"><i class="fas fa-angle-left" aria-hidden="true"></i></span>',
-  nextArrow : '<span data-role="none" class="slick-next" tabindex="0"><i class="fas fa-angle-right" aria-hidden="true"></i></span>'
+  nextArrow : '<span data-role="none" class="slick-next" tabindex="0"><i class="fas fa-angle-right" aria-hidden="true"></i></span>',
+  responsive: [
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 2,
+      arrows: true,
+      centerMode: true,
+    }
+  },
+  {
+    breakpoint: 568,
+    settings: {
+      slidesToShow: 1,
+      arrows: false,
+      centerMode: true,
+      centerPadding: '60px',
+
+    }
+  },
+  ]
 });
 
 $('.banner-slider').slick({
@@ -156,37 +176,72 @@ jQuery(window).scroll(function() {
 
 
 
-    // edited on april 8
-    $('#navbarSupportedContent .dropdown').mouseover( function(e){
+    // edited on april 8 by anjit
+
+    $('.dropdown').mouseover( function(e){
       $(this).addClass('show');
       $(this).children('ul').addClass('show');
     });
 
-    // $('#navbarDropdown').on("click", function(e){
-    //   $(this).parent().addClass('show');
-    //   $(this).next('ul').addClass('show');
-    //   console.log($(this).parent());
-    //   console.log($(this).next('ul'));
-    //   // e.default();
-    // });
 
-    $('#navbarSupportedContent .dropdown').mouseleave( function(e){
+    $('.dropdown').mouseleave( function(e){
       $(this).removeClass('show');
       $(this).children('ul').removeClass('show');
+      $('#navbarSupportedContent .dropdown-submenu.dropright ul').hide();
     });
 
     
-    $('#navbarSupportedContent .dropdown-submenu.dropright').mouseover( function(e){
-      $(this).children('ul').show();
-      e.stopPropagation();
-      e.preventDefault();
-    });
-    $('#navbarSupportedContent .dropdown-submenu.dropright').mouseleave( function(e){
-      $(this).children('ul').hide();
-      e.stopPropagation();
-      e.preventDefault();
-    });
+    
+    
+    // edited on april 9 by anjit
+    
+    if($(window).width()<810){
+      $('.top-right .cart .dropdown').mouseover( function(e){
+        $(this).removeClass('show');
+        $(this).children('ul').removeClass('show');
+      });
+      $('.top-right .cart .dropdown').click( function(e){
+        window.location.href = "./cart.html";
+      })
+    }
 
+    // popular silk
+    $('.popular-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: false,
+      dots:false,
+      arrows: true,
+      centerPadding:'60px',
+      prevArrow: '<span data-role="none" class="slick-prev" tabindex="0"><i class="fas fa-angle-left" aria-hidden="true"></i></span>',
+      nextArrow : '<span data-role="none" class="slick-next" tabindex="0"><i class="fas fa-angle-right" aria-hidden="true"></i></span>',
+      responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          arrows: true,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 568,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '60px',
 
+        }
+      },
+      ]
+    });
   });
+
 
