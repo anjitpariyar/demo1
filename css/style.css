@@ -1077,7 +1077,7 @@ margin:25px 0;
     transform: translateX(-500px);
     z-index:333;
     text-align: left;
-    overflow-y: scroll;
+   
   }
   .sidenav.active{
     transform: translateX(0);
