@@ -1823,7 +1823,7 @@ margin:25px 0;
     padding-bottom: 0;
   }
   .footer{
-    padding-top: 0;
+    padding: 0;
   }
   .footer-content a, .copyright-text p {
     font-size: 13px;
@@ -1833,6 +1833,9 @@ margin:25px 0;
   }
   .footer-content h3::before{
     height: 33px;
+  }
+  .footer-content {
+    margin-bottom: 0px;
   }
 
 }
