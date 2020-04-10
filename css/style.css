@@ -788,7 +788,7 @@ margin:25px 0;
     }
     .related-products h2{
       text-align: center;
-      border-bottom: 1px solid;
+      /* border-bottom: 1px solid; */
       margin-bottom: 10px;
     }
     .multiple-items button{
@@ -846,7 +846,7 @@ margin:25px 0;
       justify-content: space-between;
     }
     .cart-price ul li, .update-product ul li{
-      padding:0 25px;
+      padding:0 3px;
       margin-bottom: 5px;
     }
     .cart-price ul, .update-product ul{
@@ -1724,7 +1724,31 @@ li.sale sup{
   margin-top: 5px;
   display: inline-block;
 }
+/* singel-product-detail */
+.singel-product-detail button.cartbtn{
+  margin-right:12px;
+  background-color: #9cb549;
 
+}
+.singel-product-detail form button{
+  border-radius: 30px;
+  padding: 13px 50px;
+}
+
+.singel-product-detail form input{
+  margin-bottom: 20px;
+}
+.singel-product-detail form label{
+  margin-right: 12px;
+}
+
+.singel-product-detail form label ~ span{
+  border: 1px solid #ddd;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 5px 5px;
+  height: 30px;
+}
 
 @media (max-width: 1010px){
   .expand-search{
@@ -1771,6 +1795,21 @@ li.sale sup{
    right: -50%;
  }
 }
+@media (max-width: 768px){
+  .slide-product .lsb-preview {
+    display: block;
+    height: 350px;
+  }
+  .slide-product .lsb-preview img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .with-sticky .related-products {
+    display: none;
+  }
+
+}
 
 @media (max-width: 575.5px){
   section, .banner-content {
@@ -1790,16 +1829,13 @@ li.sale sup{
   .mobile-main-menu .col-sm-2.col-6{
     text-align: right;
   }
-
   .mob-logo a .img-fluid {
     width: 70px;
     height: auto;
   }
-
   .top-header> .container >.row> .col-md-6.col-sm-5.col-12 {
     display: none;
   }
-
   .top-right {
     text-align: right;
     margin-bottom: 0px;
@@ -1885,11 +1921,23 @@ li.sale sup{
   .row.description .col-md-6 {
     margin-bottom: 4px;
   }
+  .slide-product .lsb-preview {
+    display: block;
+    height: 290px;
+  }
+  .singel-product-detail form button{
+    border-radius: 30px;
+    padding: 8px 20px;
+  }
 
 
 }
 
 @media (max-width: 406px){
+  .breadcrumb {
+    font-size: 13px;
+    padding: 7px;
+  }
   .slick-dots li{
     height: 10px !important;
     width: 10px !important;
@@ -1996,5 +2044,15 @@ li.sale sup{
   .footer-content {
     margin-bottom: 0px;
   }
+  .pager-thumbnail .pager-thumb img {
+    max-width: 45px;
+  }
+  .product-faq button{
+    padding: 0;
+  }
+  .singel-product-detail button {
+    margin-bottom: 0px;
+  }
+
 }
 
