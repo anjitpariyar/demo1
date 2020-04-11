@@ -1785,11 +1785,68 @@ li.sale sup{
   color: #946447;
 }
 
-.cart-page .col-md-4.sticky .cart-total{
+.cart-page .col-md-4.sticky .cart-total, .category-page .sticky{
   position: sticky;
-  top: 78px;
+  top: 100px;
 
 }
+.footer-content {
+  padding-bottom: 0;
+}
+
+
+/* april 11 category-page*/
+.category-page .card-title {
+  background-color: #9bb44a;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 12px 17px;
+  border-radius: 10px 10px 0 0;
+
+}
+.category-page .card-title h3{
+  color: #fff;
+  margin-bottom: 0;
+  float: left;
+}
+.category-page .card-title .product-view-all{
+  justify-content: end;
+}
+.category-page .card-title .product-view-all label{
+  margin-bottom: 0;
+}
+.category-page .col-12 > .card-body{
+  padding: 8px;
+}
+.category-page .card-body .col-lg-4.col-6{
+  padding: 8px;
+}
+.category-page .card-body .major-product {
+    box-shadow: 0 0 5px #ddd;
+}
+
+.category-page .card-body.related{
+  padding: 0;
+}
+.category-page .list-group-item:first-child {
+    border-radius: 0;
+}
+.card-title.help{
+  margin-top: 1rem;
+}
+.card-body.related.help{
+  padding:10px 16px;
+  border: 1px solid #ddd;
+  border-top: 0;
+}
+.card-body.related.help a{
+  display: block;
+  padding: 6px 0px;
+}
+.card-body.related.help a i{
+  padding-right: 6px;
+}
+
 
 @media (max-width: 1010px){
   .expand-search{
@@ -1801,7 +1858,7 @@ li.sale sup{
   .banner-content{
     padding-top: 25px;
   }
-  .cart-page .col-md-4.sticky .cart-total{
+  .cart-page .col-md-4.sticky .cart-total, .category-page .sticky{
     top: -15px;
   }
   .cart-page .col-md-4.sticky{
