@@ -2479,6 +2479,10 @@ li.sale sup{
   .login-page .card-title{
     font-size: 16px;
   }
+  .login-page .card-title::first-letter{
+    font-size: inherit;
+    color: inherit;
+  }
 }
 
 
