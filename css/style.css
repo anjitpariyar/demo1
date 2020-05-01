@@ -23,6 +23,7 @@ ul{
   margin: 0;
   padding: 0;
 }
+/* #946447 */
 ul {
   list-style: none;
 }
@@ -763,7 +764,7 @@ margin:25px 0;
       padding:15px 15px 15px 0;
       position: relative;
       text-decoration: unset !important;
-      color: #946447;
+      color: #b44747;
       transition: none;
 
     }
@@ -1000,7 +1001,7 @@ margin:25px 0;
   margin-bottom: 15px;
 }
 .checkout-info .card-body input{
-  width: 100%;
+  /* width: 100%; */
   border:unset;
   border-bottom: 1px solid #000;
   margin-bottom: 15px;
@@ -1670,7 +1671,7 @@ margin:25px 0;
 }
 
 li.sale sup{
-  background-color:#946447;
+  background-color:#b44747;
   color: #fff;
   padding: 2px 4px;
   font-size: 9px;
@@ -1702,7 +1703,7 @@ li.sale sup{
 }
 .features .all-features{
   padding: 0;
-  background-color: #946447;
+  background-color: #b44747;
 }
 
 
@@ -1798,7 +1799,7 @@ li.sale sup{
   color: #94B62C;
 }
 .cart-amount h2.section-title, .cart-item-name .pp{
-  color: #946447;
+  color: #b44747;
 }
 
 .cart-page .col-md-4.sticky .cart-total, .category-page .sticky{
@@ -1815,7 +1816,7 @@ li.sale sup{
 /* april 11 category-page*/
 .category-page .card-title, .checkout .checkout-info .card-header {
   background-color: #9bb44a;
-  color: #946447;
+  color: #b44747;
   margin-bottom: 0;
   padding: 12px 17px;
   border-radius: 10px 10px 0 0;
@@ -1826,7 +1827,7 @@ li.sale sup{
 .category-page .card-title h3{
   margin-bottom: 0;
   float: left;
-  color: #946447;
+  color: #b44747;
   font-weight: normal;
 }
 /* .category-page .card-title{
@@ -1834,7 +1835,7 @@ li.sale sup{
   background-color: transparent;
   } */
 /* .category-page .card-title h3{
-  color: #946447;
+  color: #b44747;
   font-weight: normal;  
   } */
   .category-page .card-title .product-view-all{
@@ -1931,7 +1932,7 @@ li.sale sup{
     color: #fff;
   }
   .slide-product-content .multiple-items a p.price{
-    color: #946447;
+    color: #b44747;
     padding: 5px;
     margin: 0;
     font-size: 17px;
@@ -2692,7 +2693,7 @@ li.sale sup{
   color: #fff;
 }
 .contact-us .information {
-  background-color:#946447;
+  background-color:#b44747;
   color: #fff;
   border-radius: 6px;
   padding: 1.5em;
@@ -2722,6 +2723,30 @@ li.sale sup{
   border-radius: 6px;
 }
 
+.checkout .form-check svg{
+  width: 40px;
+  height: auto;
+}
+.checkout .payment .form-check label{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout .payment input[type="radio"]{
+  transform: translateY(10px);
+}
+.checkout .payment .form-check{
+  border: 1px solid #ddd;
+  padding: 6px 1em 6px 2em;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.checkout .payment .form-check.active{
+  border-color: #9cb549;
+}
+.checkout .form-check:last-child{
+  margin-bottom: 0;
+}
 
 
 
