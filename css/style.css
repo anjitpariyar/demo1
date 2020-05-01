@@ -98,12 +98,17 @@ section{
 }
 .top-slider{
   /* background:#FFBE5D; */
+  height: 45px;
   background-color: #f5f789e0;
   text-align: center;
   padding: 10px;
 }
 .top-slider .carousel-inner{
   color: #5c5c5c;
+}
+
+.top-slider p{
+  font-weight: bold;
 }
 .closebtn{
   position: absolute;
@@ -120,6 +125,7 @@ section{
   color:#fff; */
   background: #EFEFEF;
   color: #6C7175;
+  border-bottom: red;
 }
 .top-left-content{
   display: inline-flex;
@@ -373,90 +379,85 @@ margin:25px 0;
 .major-products{
   margin-top: 0;
 }
-/* .major-product{
-  background-color: #efefef;
-  box-shadow: 0 0 5px #ddd;
-  border-radius: 5px;
-  } */
-  .see-all{
-    display: flex;
-    justify-content: space-around;
-    padding:20px 0;
-    background-color: #fff;
-  }
-  .see-all p, .see-all a{
-    font-weight: 600;
-  }
-  .see-all a{
-    color: #7F9B28;
-    font-size: 14px;
-  }
-  .product-name{
-    padding: 10px 20px 20px 10px;
-    background-color: #fff; 
-  }
-  .product-name p{
-    font-weight: 600;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .product-name .price{
-    font-size: 20px;
-    text-align: center;
-    font-weight: 500;
-    color: #7f9b28;
-  }
-  .product-view-all .view-all{
-    font-weight: 600;
-    color: #7F9B28;
-    margin-bottom: 25px;
-  }
-  .add-to-cart, .product-view-all{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+.see-all{
+  display: flex;
+  justify-content: space-around;
+  padding:20px 0;
+  background-color: #fff;
+}
+.see-all p, .see-all a{
+  font-weight: 600;
+}
+.see-all a{
+  color: #7F9B28;
+  font-size: 14px;
+}
+.product-name{
+  padding: 10px 20px 20px 10px;
+  background-color: #fff; 
+}
+.product-name p{
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.product-name .price{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: #7f9b28;
+}
+.product-view-all .view-all{
+  font-weight: 600;
+  color: #7F9B28;
+  margin-bottom: 25px;
+}
+.add-to-cart, .product-view-all{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-  .add-to-cart a:first-child{
-    color: #888;
-    font-weight: 500;
-    border: 1px solid #DEE2E6;
-    border-radius: 30px;
-    padding: 10px 20px;
-  }
-  .add-to-cart a:first-child:hover{
-    color:#7f9b28;
-  }
-  .add-to-cart a:last-child{
-    padding: 10px 10px;
-  }
-  .add-to-cart{
-    max-width: 175px;
-    margin: 0 auto;
-    justify-content: space-around;
-  }
-  .product-view-all .nav-link {
-    font-size: 25px;
-    /* margin-bottom: 20px; */
-    font-weight: 600;
-    padding: 5px 10px 0 0 ;
-    margin-left: 1.5rem;
-  }
-  .product-view-all .nav-link:hover{
-    border-color: transparent;
-  }
-  .product-view-all .nav-link.active{
-    opacity: 1;
-    border: unset;
-    background-color: #9bb447;
-    color: #fff;
-    padding: 4px 24px;
-  }
-  .product-view-all .nav-tabs{
-    border-bottom: unset;
-  }
-  .popular-products .major-product, .product-tab .major-product{
+.add-to-cart a:first-child{
+  color: #888;
+  font-weight: 500;
+  border: 1px solid #DEE2E6;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+.add-to-cart a:first-child:hover{
+  color:#7f9b28;
+}
+.add-to-cart a:last-child{
+  padding: 10px 10px;
+}
+.add-to-cart{
+  max-width: 175px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.product-view-all .nav-link {
+  font-size: 25px;
+  /* margin-bottom: 20px; */
+  font-weight: 600;
+  padding: 5px 10px 0 0 ;
+  margin-left: 1.5rem;
+}
+.product-view-all .nav-link:hover{
+  border-color: transparent;
+}
+.product-view-all .nav-link.active{
+  opacity: 1;
+  border: unset;
+  background-color: #9bb447;
+  color: #fff;
+  padding: 4px 24px;
+}
+.product-view-all .nav-tabs{
+  border-bottom: unset;
+}
+.popular-products .major-product, .product-tab .major-product{
    /*  box-shadow: unset;
     border:1px solid #ddd;
     border-radius: 5px; */
@@ -1683,14 +1684,14 @@ li.sale sup{
 }
 .features li{
   position: relative;
-  padding: 20px 25px;
+  padding: 30px 25px;
   background-color: #0000000d;
 }
 .features li i{
   position: absolute;
   top: 50%;
   left: -3px;
-  color: #ffffff73;
+  color: rgba(255, 255, 255, 0.22);
   transform: translateY(-60%);
   z-index: 0;
 }
@@ -2351,129 +2352,173 @@ li.sale sup{
   }
 
 
-  /* late edited on april 27 */
-  .login-page .bg{
-    background-color: #9bb44a;
-    background-image: url('../images/buddha.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-  }  
-  .login-page .container> .card{
-    box-shadow: 0 0 42px 0 rgba(0, 0, 0, 0.08);
-    border: 0;
-    border-radius: 10px;
-    overflow: hidden;
-
+  .pages{
+    margin-bottom: 100px !important;
+    text-align: justify;
   }
 
-  .login-page article{
-    padding:3em;
-  }
+  /*.contact-top{*/
+    /*border-top: 1px solid #ddd;*/
+    /*}*/
 
-  .login-page .col-sm-12:first-child article{
-    padding-right: 2em;
-
-  }
-  .login-page form{
-    padding: 1em;
-    border: 1px solid #dee2e6 ;
-    border-top: 0;
-    border-radius: .25rem;
-    padding: 2em;
-
-  }
-  .login-page .card-title {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-  }
-  .login-page .card-title::first-letter{
-    font-size: 3rem;
-    color: #9bb44a;
-  }
-  .login-page button{
-    display: block;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 30px;
-    padding: 8px 15px;
-    background-color: #9cb549;
-    margin-top: 1em;
-  } 
-  .login-page .forget{
-    margin: 8px 0 0;
-    display: inline-block;
-  }
-  .login-page .nav-link{
-    padding: .5rem 2rem;
-  }
-  #profile ~ p{
-    font-size: 14px;
-    margin-top: 1em;
-  }
-  .login-page h1{
-    font-size: 5em;
-    color: #fff;
-  }
-  .login-page h1 ~ .small-title{
-    font-size: 35px;
-    color: #bababa;
-  }
-
-  @media (max-width: 835px){
-    .login-page article{
-      padding:2em;
-    }
-    .login-page .card-title {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-    .login-page .card-title::first-letter{
-      font-size: 1.5em;
-      color: #9bb44a;
-    }
-    .login-page .nav-link{
-      padding: .5rem 1.4rem;
-    }
-    .login-page h1{
-      font-size: 4em;
-      margin-bottom: 0;
-    }
-    .login-page h1 ~ .small-title{
-      font-size: 30px;
-      color: #878787;
+    #search span{
+      color: #94B62C;
+      font-weight: bolder;
     }
 
-  }
-  @media (max-width: 767.5px){
-    .login-page .bg{      
-      display: none;
+    .search-result{
+      margin-bottom: 20px;
     }
+
+    .placeorder{
+      background-color: #E1E1E1 !important;
+      color: #666666 !important;
+    }
+
+
+    /*****************************************************************************************/
+
+    /* late edited on april 27 */
+
+    /* late edited on april 27 */
+    .login-page .bg{
+      background-color: #9bb44a;
+      background-image: url('../images/buddha.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }  
+    .login-page .container> .card{
+      box-shadow: 0 0 42px 0 rgba(0, 0, 0, 0.08);
+      border: 0;
+      border-radius: 10px;
+      overflow: hidden;
+
+    }
+
     .login-page article{
       padding:3em;
     }
-  } 
-  @media (max-width: 537.5px){
-   .login-page article{
-    padding:0px;
+
+    .login-page .col-sm-12:first-child article{
+      padding-right: 2em;
+
+    }
+    .login-page form{
+      padding: 1em;
+      border: 1px solid #dee2e6 ;
+      border-top: 0;
+      border-radius: .25rem;
+      padding: 2em;
+
+    }
+    .login-page .card-title {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+  /* .login-page .card-title::first-letter{
+    font-size: 3rem;
+    color: #9bb44a;
+    } */
+    .login-page button{
+      display: block;
+      color: #fff;
+      font-weight: 500;
+      border-radius: 30px;
+      padding: 8px 15px;
+      background-color: #9cb549;
+      margin-top: 1em;
+    } 
+    .login-page .forget{
+      margin: 8px 0 0;
+      display: inline-block;
+    }
+    .login-page .nav-link{
+      padding: .5rem 2rem;
+    }
+    #profile ~ p{
+      font-size: 14px;
+      margin-top: 1em;
+    }
+    .login-page h1{
+      font-size: 5em;
+      color: #fff;
+    }
+    .login-page h1 ~ .small-title{
+      font-size: 35px;
+      color: #bababa;
+    }
+    button.disabled{
+      cursor: no-drop;
+    }
+
+    .product-name p:first-child {
+      color: red;
+      height: 33px;
+      overflow: visible;
+    }
+    .product-name p:first-child a{
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    @media (max-width: 835px){
+      .login-page article{
+        padding:2em;
+      }
+      .login-page .card-title {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+      .login-page .card-title::first-letter{
+        font-size: 1.5em;
+        color: #9bb44a;
+      }
+      .login-page .nav-link{
+        padding: .5rem 1.4rem;
+      }
+      .login-page h1{
+        font-size: 4em;
+        margin-bottom: 0;
+      }
+      .login-page h1 ~ .small-title{
+        font-size: 30px;
+        color: #878787;
+      }
+
+    }
+    @media (max-width: 767.5px){
+      .login-page .bg{      
+        display: none;
+      }
+      .login-page article{
+        padding:3em;
+      }
+    } 
+    @media (max-width: 537.5px){
+     .login-page article{
+      padding:0px;
+    }
+    .login-page .container> .card{
+      box-shadow: none;
+    }
+    .login-page .card-title{
+      font-size: 22px;
+    }
   }
-  .login-page .container> .card{
-    box-shadow: none;
+  @media (max-width: 437.5px){
+    .login-page form{
+      font-size: 13px;
+      padding: 1.3em;
+    }
+    .login-page .card-title{
+      font-size: 20px;
+    }
   }
-  .login-page .card-title{
-    font-size: 22px;
-  }
-}
-@media (max-width: 437.5px){
-  .login-page form{
-    font-size: 13px;
-    padding: 1.3em;
-  }
-  .login-page .card-title{
-    font-size: 20px;
-  }
-}
-@media (max-width: 437.5px){
- .login-page .nav-tabs{
+  @media (max-width: 437.5px){
+   .login-page .nav-tabs{
     font-size: 13px;
   }
   .login-page .card-title{
@@ -2486,3 +2531,262 @@ li.sale sup{
 }
 
 
+
+/* late edited on april 30 */
+.category-thumbnail{
+  height: 240px;
+}
+.beads-bracelets .category-thumbnail, .wooden-products-content .category-thumbnail{
+  height: auto;
+}
+.category-thumbnail a img{
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+}
+@media (max-width: 1060px){
+  .category-thumbnail{
+    height: 190px;
+  }
+}
+@media (max-width: 805px){
+  .product-type h3{
+    font-size: 16px;
+    height: 30px;
+  }
+  .hemp-products-content{
+    padding: 0;
+
+  }
+}
+@media (max-width: 642px){
+  .product-name {
+    padding: 10px;
+  }
+}
+@media (max-width: 408px){
+ .category-thumbnail{
+  height: 140px;
+}
+
+.product-name .price {
+  font-size: 15px;
+}
+}
+
+
+/* about-us */
+.about-us{
+
+}
+.about-us img{
+  height: 650px;
+  width: 100%;
+  object-fit: cover;  
+}
+
+.about-us h2{
+  margin-bottom: 0;
+}
+.about-us small{
+  color: #bbb;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+.about-us small::after {
+  content: "";
+  display: inline-block;
+  background-color: rgba(155, 180, 73, 0.5);
+  height: 2px;
+  width: 50%;
+  margin-left: 18px;
+}
+.about-us .paragraph{
+  margin-top: 25px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #666;
+}
+.about-us .paragraph p{
+  font-size: inherit;
+}
+.about-us .second-img img {
+  padding: 4rem 0 4rem 1rem;
+}
+.about-us .first-img{
+  position: relative
+}
+.about-us .first-img:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #deddd9;
+  z-index: -1;
+  transform: rotate(1deg);
+}
+.about-us .first-img{
+  padding: 0;
+}
+.about-us .first-img img{
+  transform: rotate(-1deg);
+}
+
+/* contact us */
+.contact-us img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;  
+}
+
+.contact-us h2{
+  margin-bottom: 0;
+}
+.contact-us small{
+  color: #bbb;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+.contact-us small::after {
+  content: "";
+  display: inline-block;
+  background-color: rgba(155, 180, 73, 0.5);
+  height: 2px;
+  width: 50%;
+  margin-left: 18px;
+}
+
+.contact-us form{
+  margin-top: 25px;
+  font-size: 17px;
+  color: #666;
+  border: 1px solid #ddd;
+  padding: 2em 1.5em;
+  border-radius: 6px;
+
+}
+.contact-us input{
+  height: 50px;
+}
+.contact-us .form-group {
+  margin-bottom: 20px;
+}
+.contact-us button{
+  border: 0;
+  width: 50%;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px 30px;
+  background-color: #9cb549;
+  color: #fff;
+}
+.contact-us .information {
+  background-color:#946447;
+  color: #fff;
+  border-radius: 6px;
+  padding: 1.5em;
+  line-height: 2;
+}
+.contact-us .social{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.contact-us .social li{
+  margin-right: 12px;
+  font-size: 1.5em;
+}
+.contact-us a{
+  color: #fff;
+}
+.contact-us a i{
+  margin-right: 8px;
+}
+.contact-us > .row:first-child{
+  margin-bottom: 30px;
+}
+.contact-us iframe{
+  border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px){
+  .about-us img{
+    height: 500px;
+  }
+} 
+@media (max-width: 767.5px){
+  .about-us img{
+    height: 500px;
+  }
+  .about-us .first-img:after{
+    content: none;
+  }
+  .about-us .first-img{
+    padding:0 15px;
+  }
+  .about-us .first-img img{
+    transform: none;
+  }
+  .about-us .second-img img {
+    padding: 0;
+  }
+  .contact-us img, .contact-us iframe{
+    height: 300px;
+    margin-top: 25px;
+  }
+
+}
+@media (max-width: 658.5px){
+  .about-us img{
+    height: 350px;
+  }
+  .contact-us img, .contact-us iframe{
+    height: 200px;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 488px){
+  .about-us .paragraph {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+  }
+  .about-us img{
+    height: 250px;
+  } 
+  .contact-us input{
+    height: 40px;
+  }
+  .contact-us .form-group {
+    margin-bottom: 1em;
+  }
+  .contact-us .information, .contact-us form{
+    padding: 1em;
+  }
+  .contact-us > .row:first-child, .contact-us img{
+    margin: 0px !important;
+  }
+}
