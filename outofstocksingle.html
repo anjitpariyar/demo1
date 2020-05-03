@@ -320,32 +320,16 @@
 									<div class="single-main-thumb">
 										<div class="single-thumb">
 											<a href="images/single-product.jpg" class="lsb-preview" data-lsb-group="header" data-lsb-download-link="custom.jpg"><img alt="product" src="images/single-product.jpg" class="img-fluid"></a>
-											<div class="bg">
-												<h2 class="card-title">OUT OF <br> Stock</h2>
-												<a href="#outofstock" data-toggle="modal">Remind Me</a>
-											</div>
 										</div>
 										<div class="single-thumb">
 											<a href="images/singl-thumb.jpg" class="lsb-preview" data-lsb-group="header" data-lsb-download-link="custom.jpg"><img alt="product" src="images/singl-thumb.jpg" class="img-fluid"></a>
-											<div class="bg">
-												<h2 class="card-title">OUT OF <br> Stock</h2>
-												<a href="#outofstock" data-toggle="modal">Remind Me</a>
-											</div>
 										</div>
 
 										<div class="single-thumb">
 											<a href="images/singl-thumb2.jpg" class="lsb-preview" data-lsb-group="header" data-lsb-download-link="custom.jpg"><img alt="product" src="images/singl-thumb2.jpg"></a>
-											<div class="bg">
-												<h2 class="card-title">OUT OF <br> Stock</h2>
-												<a href="#outofstock" data-toggle="modal">Remind Me</a>
-											</div>
 										</div>
 										<div class="single-thumb">
 											<a href="images/singl-thumb3.jpg" class="lsb-preview" data-lsb-group="header" data-lsb-download-link="custom.jpg"><img alt="product" src="images/singl-thumb3.jpg"></a>
-											<div class="bg">
-												<h2 class="card-title">OUT OF <br> Stock</h2>
-												<a href="#outofstock" data-toggle="modal">Remind Me</a>
-											</div>
 										</div>
 
 									</div>
@@ -386,20 +370,23 @@
 									<h2>Tara Statue Decor</h2>
 								</div>
 								<p class="product-price">$29.99</p>
-								<form>
+								<!-- edited one -->
+								<form class="out-of-stock">
 									<p>
 										<label for="qty1">Quantity</label>
-										<span id="minus1" width="20" height="20" class="minus">-</span>
-										<input id="qty1" type="text" value="1" class="qty" required="">
-										<span id="add1" width="20" height="20" class="add">+</span></p>
+									<!-- 	<span id="minus1" width="20" height="20" class="minus">-</span> -->
+										<input id="qty1" type="text" value="0" class="qty" required="" readonly="">
+										<!-- <span id="add1" width="20" height="20" class="add">+</span></p> -->
 										<div class="button-group">
-											<button class="cartbtn disabled" disabled="">Add to cart</button>
-											<button class="wishlist disabled" onclick="window.location.href='./checkout.php'" disabled="">Buy Now</button>
+											<!-- edited two -->
+											<h2 class="out d-none"></h2>
+											<a href="#outofstock" data-toggle="modal"><img src="images/eye-open.svg">Remind Me</a>
 										</div>
 
 									</form>
 									<div class="product-status">
-										<p class="product-stock">Total Instock:<span title="instock">5</span></p>
+										<!-- edited three -->
+										<p class="product-stock">Total Instock:<span title="instock">Out of Stock</span></p>
 										<!-- <p class="product-views">Views:<span title="views">175 | <i class="fas fa-eye"></i></span></p> -->
 									</div>
 									<div class="row">
