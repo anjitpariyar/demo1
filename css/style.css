@@ -2821,6 +2821,33 @@ li.sale sup{
   border: 0;
 }
 
+.out-of-stock .out + a img{
+  width: 16px;
+  margin-right: 3px;
+
+}
+.out-of-stock .add-to-cart{
+  max-width: 100%;
+  width: 100%;
+  align-items: center;
+  padding: 11px 0;
+
+}
+.out-of-stock .out{
+  font-size: 1em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #b44747;
+
+}
+.out-of-stock .out + a{
+  padding: 0;
+}
+
+#outofstock .modal-title{
+  width: 90%;
+}
+
 
 
 
@@ -2886,6 +2913,10 @@ li.sale sup{
   }
   .contact-us > .row:first-child, .contact-us img{
     margin: 0px !important;
+  }
+  #outofstock .modal-title {
+    width: 90%;
+    font-size: 14px;
   }
 }
 @media (max-width: 388px){
