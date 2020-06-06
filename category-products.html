@@ -373,7 +373,7 @@
 										<div class="thumbnail"> <a href="./single-product.html"><img src="images/1586132628singl-thumb2.jpg" class="img-fluid"></a></div>
 										<div class="product-name">
 											<p><a href="./single-product.html">Leather Strapped Hemp Backpack Lhb18</a></p>
-											<p class="price">$69.99</p>
+											<p class="price">$69.99 <del class="ml-2 text-muted">$60.0</del></p>
 											<div class="add-to-cart">
 												<a class="add-cart" href="">Add to cart</a>
 												<a href="./single-product.html"><img src="images/eye-open.svg"></a>
@@ -419,8 +419,8 @@
 											<p><a href="./single-product.html">Leather Strapped Hemp Backpack Lhb18</a></p>
 											<p class="price">$69.99</p>
 											<div class="add-to-cart">
+												<a href="#outofstock" data-toggle="modal">Remind Me <i class="far fa-calendar-check"></i></a>
 												<h2 class="out">out of stock</h2>
-												<a href="#outofstock" data-toggle="modal"><img src="images/eye-open.svg">Remind Me</a>
 											</div>
 										</div>
 									</div>
@@ -527,11 +527,14 @@
 							<div class="form-group">
 								<input type="tel" class="form-control" id="Number" placeholder="Phone No">
 							</div>
-							<div class="form-group">
-								<select class="form-control" id="exampleFormControlSelect1">
-									<option>Remind Me via Email</option>
-									<option>Remind Me via Phone</option>
-								</select>
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="emailcheck"  checked="true">
+								<label class="form-check-label" for="emailcheck" checked>Remind Me via Email</label>
+								
+							</div>
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="phonecheck">
+								<label class="form-check-label" for="phonecheck" checked="true">Remind Me via Phone</label>
 							</div>
 							<button type="submit" class="btn btn-primary">Remind Me</button>
 						</form>
@@ -548,5 +551,39 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/lsb.min.js"></script>
+	<script>
+		(function() {
+			const form = document.querySelector('#outofstock form');
+			const checkboxes = form.querySelectorAll('input[type=checkbox]');
+			const checkboxLength = checkboxes.length;
+			const firstCheckbox = checkboxLength > 0 ? checkboxes[0] : null;
+
+			function init() {
+				if (firstCheckbox) {
+					for (let i = 0; i < checkboxLength; i++) {
+						checkboxes[i].addEventListener('change', checkValidity);
+					}
+
+					checkValidity();
+				}
+			}
+
+			function isChecked() {
+				for (let i = 0; i < checkboxLength; i++) {
+					if (checkboxes[i].checked) return true;
+				}
+
+				return false;
+			}
+
+			function checkValidity() {
+				const errorMessage = !isChecked() ? 'At least one checkbox must be selected.' : '';
+				firstCheckbox.setCustomValidity(errorMessage);
+			}
+
+			init();
+		})();
+
+	</script>
 </body>
 </html>
