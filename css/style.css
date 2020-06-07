@@ -152,7 +152,7 @@ section{
 }
 /* edited on june6 */
 .top-left-content li .fab:hover{
-  color: #3d3d3d;
+  color: #03a84e;
 }
 .top-left-content li input::-moz-selection, .top-left-content li input::selection  { 
   color: #fff;
@@ -1773,15 +1773,16 @@ li.sale sup{
 .features li{
   position: relative;
   padding: 30px 25px;
-  background-color: #0000000d;
+  /* background-color: #0000000d; */
 }
 .features li i{
   position: absolute;
   top: 50%;
   left: -3px;
-  color: rgba(255, 255, 255, 0.22);
+  /* color: rgba(255, 255, 255, 0.22); */
   transform: translateY(-60%);
   z-index: 0;
+  color: rgba(180, 71, 71, 0.21);
 }
 .features li i::before{
   font-size: 2.5rem;
@@ -1790,7 +1791,9 @@ li.sale sup{
 }
 .features .all-features{
   padding: 0;
-  background-color: #b44747;
+  /* background-color: #b44747; */
+  background-color: #efefef;
+  color: #b44747;
 }
 
 
@@ -1938,6 +1941,7 @@ li.sale sup{
 }
 .category-page .card-body .major-product {
   box-shadow: 0 0 5px #ddd;
+  position: relative;
 }
 
 .category-page .card-body.related{
@@ -1978,9 +1982,10 @@ li.sale sup{
 .list-group-item:hover {
   color: #43AB48;
 }
-.category-page .card-body .collapse.show{
+.category-page .card-body .collapse{
   /* border-top: 1px solid #ddd; */
   padding-left: 1em;
+  transition: .3s ease;
 }
 
 .top-left-content li.top-sociallinks{
@@ -2464,6 +2469,8 @@ li.sale sup{
     height: 40px;
     object-fit: contain;
   }
+
+
   footer .col-md-3{
     margin-bottom: 5px;
   }
@@ -2854,6 +2861,9 @@ li.sale sup{
   width: 40px;
   height: auto;
 }
+.payment-icon li:first-child svg{
+  transform: scale(1.8);
+}
 .checkout .payment .form-check label{
   display: flex;
   justify-content: space-between;
@@ -2951,8 +2961,8 @@ li.sale sup{
   text-transform: uppercase;
   color: #fff;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 15px;
+  left: 15px;
   background-color: #b44747e0;
   padding: 1em 1em .9em;
   /* border: 4px solid #fff */
@@ -3068,11 +3078,15 @@ li.sale sup{
 }
 
 .login-page .nav-tabs .nav-item {
-  margin-bottom: -2px;
+  margin-bottom: -3px;
 }
 
 .login-page label, .login-page .forget{
   color: #f2f2f2;
+}
+.login-page label a{
+  color: #f1f1f1;
+  text-decoration: underline;
 }
 .login-page .form-control{
   color: #333;
