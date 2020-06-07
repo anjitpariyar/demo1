@@ -3054,7 +3054,7 @@ li.sale sup{
     font-size: 13px;
   }
   .mobile-main-menu .row {
-    align-items: self-end;
+    align-items: flex-end;
   }
 
 
